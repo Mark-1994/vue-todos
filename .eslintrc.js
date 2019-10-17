@@ -9,7 +9,9 @@ module.exports = {
   ],
   rules: {
     'no-console': process.env.NODE_ENV === 'production' ? 'error' : 'off',
-    'no-debugger': process.env.NODE_ENV === 'production' ? 'error' : 'off'
+    'no-debugger': process.env.NODE_ENV === 'production' ? 'error' : 'off',
+    // eslint 忽略制表符报错
+    'no-tabs': 'off'
   },
   parserOptions: {
     parser: 'babel-eslint'
